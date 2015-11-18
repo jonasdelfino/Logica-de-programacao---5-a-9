@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>capitulo 6</title>
+</head>
+<body>
+<input type="text" id="numero" />
+<input type="submit" value="Adicione e verifique no Bingo!"
+id="verificar"/>
+<script>
+var adicionarSorteado = function() {
+	var numero = document.getElementById("numero").value;
+		for(var i = 0; i < sorteados.length; i = i + 1) {
+			if(sorteados[i] == numero) {
+				alert("Numero já sorteado!");
+				return;
+	}
+}
+sorteados.push(numero);
+console.log(sorteados);
+};
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>capitulo 5</title>
+</head>
+<body>
+<script>
+
+var numeroPensado = Math.round(Math.random() * 1000);
+var numeroDaTentativa = 1;
+while(numeroDaTentativa <= 3) {
+var chute = prompt("Qual você acha que é?");
+if(chute == numeroPensado) {
+alert("Parabéns, você acertou!");
+break;
+} else {
+alert("Você errou. Será que ainda tem mais tentativas?");
+}
+numeroDaTentativa++;
+};
+
+ </script>
+
+
+
+</body>
+</html>

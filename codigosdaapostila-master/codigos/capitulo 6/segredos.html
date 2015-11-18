@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>capitulo 6</title>
+</head>
+<body>
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="Compare com o meu segredo!" />
+
+<script>
+var segredos = [16, 34, 37, 42, 50, 58];
+console.log(segredos[0]);
+for(var i = 0; i < 6; i = i + 1) {
+console.log(segredos[i]);
+}
+console.log(segredos.length);
+for(var i = 0; i < segredos.length; i = i + 1) {
+console.log(segredos[i]);
+}
+var caixaDoNumero = document.getElementById("numero");
+
+var botaoClicado = function() {
+for(var i = 0; i < segredos.length; i = i + 1) {
+if(segredos[i] == caixaDoNumero.value) {
+alert("Parabéns! Você acertou um dos números secretos");
+}
+}
+alert("Infelizmente você errou!");
+
+};
+
+</script>
+
+
+</body>
+</html>

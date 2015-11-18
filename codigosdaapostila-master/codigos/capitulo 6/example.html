@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>capitulo 6</title>
+</head>
+<body>
+<script>
+var botaoClicado = function() {
+for(var i = 0; i < segredos.length; i = i + 1) {
+if(segredos[i] == caixaDoNumero.value) {
+alert("Parabéns! Você acertou um dos números secretos");
+return;
+}
+}
+alert("Infelizmente você errou!");
+};
+var botaoAdivinhar = document.getElementById("adivinhar");
+botaoAdivinhar.onclick = botaoClicado;
+
+</script>
+
+
+</body>
+</html>
